@@ -39,21 +39,14 @@ body {
     padding: 1.5rem;
     display: block;
 }
-.button{
+button{
+    color: #faebd7;
+    background: none;
+    border: none;
     position: absolute;
     top: 2.5rem;
     right: 1rem;
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-.button .bar{
-    height: 3px;
-    width: 100%;
-    background: #ffff;
-    border-radius: 10px;
 }
 #menu {
     position: absolute;
@@ -63,19 +56,20 @@ body {
     background-color: rgb(0,0,0,0.9);
     transition: opacity 1s;
 }
-.exit{
-    position: absolute;
-    top: 2.5rem;
-    right: 1rem;
+.x-button{
+    font-size: 16px;
 }
 #menu-list{
+    margin-top: 30%;
     width: 100%;
     padding: 3rem;
 }
 #menu-list ul{
-    padding: 0;
+    padding: 10px;
     margin: 0;
+    height: 100%;
     flex-direction: column;
+    justify-content: space-between;
     
 }
 #menu-list li {
@@ -84,9 +78,16 @@ body {
     padding: 1rem;
 }
 #menu-list li a{
+    font-size: 18px;
+    font-weight: bolder;
     text-decoration: none;
     padding: 1rem;
     color: #faebd7;
+}
+#menu-list li a:hover,
+#menu-list li a:active{
+    text-decoration: underline solid #faebd7 3px;
+
 }
 
 .container {
@@ -168,7 +169,7 @@ footer{
         font-size: 12px;
     }
     .button{
-        display: flex;
+        display: block;
     }
     .navbar-links{
         display: none;
